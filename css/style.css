@@ -25,6 +25,7 @@ h1{
 
 .nav-bar{
     display: flex;
+    justify-content: center;
 }
 
 .fondo{
