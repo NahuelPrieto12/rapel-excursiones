@@ -27,10 +27,6 @@ font-family: 'Rubik', sans-serif;
     justify-content: center;
 }
 
-.fondo{
-    width: 100%;
-    height: 100%;
-}
 
 .fondo-dos{
     background: linear-gradient(#259bf1, #bfbfbf);
@@ -54,6 +50,8 @@ font-family: 'Rubik', sans-serif;
     height: 58px;
     text-align: center;
 }
+
+
 
 /* Nosotros */
 

@@ -13,47 +13,50 @@
         <section class="header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <h1 class="container-fluid"><a href="./index.html"><a href="./index.html"><img width="90px" src="./assets/img/logos/RapelExcursiones.png" alt=""></a>Rapel Excursiones</a></h1>
-                    <div class="container-fluid" >
-                        <ul class="navbar-nav ">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Inicio
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./pages/excursiones.html">Excursiones</a></li>
-                            <li><a class="dropdown-item" href="./pages/actividades.html">Actividades</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="./pages/formulario.html">Contacto</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/formulario.html">Contacto</a>
-                        </li>
-                        <a class="btn btn-outline-danger" href="./pages/excursiones.html" type="botton">Excursiones</a> 
-
-                    </ul>
+                  <a class="navbar-brand" href="./index.html"><img width="100px" src="./assets/img/logos/RapelExcursiones.png" alt=""></a>
+                  <h1>Rapel Excursiones</h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5 px-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Inicio</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./pages/excursiones.html">Excursiones</a></li>
+                                    <li><a class="dropdown-item" href="./pages/actividades.html">Actividades</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="./pages/formulario.html">Formulario</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">CONOCENOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/formulario.html">ESCRIBINOS</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <button class="btn btn-outline-danger btn-lg mx-5" type="submit">Excursiones</button>
+                        </form>
                     </div>
-                    </div>
-                </nav>
+                </div>
+            </nav>
         </section>
     </header>
     <main>
-        <section>
-            <div>
-                <img class="fondo" src="./assets/img/fondo.jpg" alt="">
+        <section class="d-flex justify-content-end">
+            <div class="container-fluid p-0 " >
+                <img class="container-fluid p-0" src="./assets/img/fondo.jpg" alt="">
             </div>
-            <div class="portada">
-                <h2>Pasion por la Naturaleza</h2>
-                <p>Encuentra todo lo que necesitas para viajar a nuevos mundos llenos de aventuras y experiencias para compartir. Te presentamos nuestras principales marcas</p>
-                <p class="botton"><a href="./pages/actividades.html">Descubrelo</a></p>
+            <div class="principal d-felx position-absolute p-3 pt-5 col-7 text-left">
+                <h2 class="fs-1 md-fs-2">Pasion por la <span style="color:red; font-size:50px;">Naturaleza</span></h2>
+                <p class="fs-1 ">Encuentra todo lo que necesitas para viajar a nuevos mundos llenos de aventuras y experiencias para compartir. Te presentamos nuestras principales marcas</p>
+                <button class="btn btn-danger btn-lg" type="submit">Descubrelo</button>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="container">
         <section class="footer-section">
             <div class="footer-list">
                 <ul>
