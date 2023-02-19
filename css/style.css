@@ -51,7 +51,40 @@ font-family: 'Rubik', sans-serif;
     text-align: center;
 }
 
+.title{
+    font-size: 20px;
+}
 
+.parrafo{
+    font-size: 15px;
+}
+
+@media (min-width: 576px){
+    .parrafo{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px){
+    .parrafo{
+        font-size: 30px;
+    }
+    .title{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1200px){
+    .parrafo{
+        font-size: 40px;
+    }
+    .title{
+        font-size: 50px;
+    }
+}
 
 /* Nosotros */
 
