@@ -86,21 +86,93 @@ font-family: 'Rubik', sans-serif;
     }
 }
 
+@media (min-width: 450px){
+    .titulo{
+        font-size: 6px !important; 
+    }
+}
+
 /* footer*/
 
-.footer{
-    list-style: none;
-}
+
 
 /* Nosotros */
 
-.nosotros{
-    width: 600px;
+.flex-container{
+    background: linear-gradient(#259bf1, #bfbfbf);
+    width: 100%;
 }
 
-.nosotros-imagen{
-    background-position: 20%;
-    background-size: cover;
+.nos-item1{
+    width: auto;
+    padding: 15px;
+    align-items: center;
+}
+.nos-item1 img{
+    background-size:contain;
+    padding: 15px;
+    height:  250px;
+}
+
+.nos-item1 h3{
+    font-family: 'Rubik', sans-serif; 
+    font-size: 30px;
+}
+
+.nos-iter1 div{
+    font-size: 35px;
+}
+
+.nos-item2{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nos-item2 iframe{
+    background-size:contain;
+    height: 400px;
+    width: 580px;
+    padding: 15px;
+}
+
+.nos-item2 h3{
+    font-family: 'Rubik', sans-serif; 
+    font-size: 35px;
+    padding: 15px;
+}
+
+.equipo{
+    align-items: center;
+}
+
+.equipo div{
+    display: row;
+    width: 200px;
+    align-items: center;
+}
+
+@media (min-width: 576px){
+    .flex-container{
+        background: linear-gradient(#259bf1, #bfbfbf);
+        width: 100%;
+        
+    }
+    .nos-item1 img{
+        background-size:contain;
+        padding: 15px;
+        height:  300px;
+    }
+    .nos-item1 p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
 }
 
 /* Actividades*/
