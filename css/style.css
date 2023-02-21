@@ -31,10 +31,6 @@ font-family: 'Rubik', sans-serif;
 }
 
 
-.fondo-dos{
-    background: linear-gradient(#259bf1, #bfbfbf);
-}
-
 .portada{
     position: absolute;
     width: 708px;
@@ -56,22 +52,22 @@ font-family: 'Rubik', sans-serif;
 
 
 .parrafo{
-font-size: 8px;
+font-size: 11px;
 }
 .title{
-    font-size: 13px;           
+    font-size: 15px;           
 }
 .btn{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 
 @media (min-width: 450px){
     .parrafo{
-        font-size: 12px;
+        font-size: 15px;
     }
     .title{
-        font-size: 20px;
+        font-size: 23px;
     }
     .btn{
         font-size: 18px;
@@ -113,7 +109,10 @@ font-size: 8px;
 
 /* footer*/
 
-
+.foot-cont{
+    background-color: #BFBFBF;
+    width: 100%;
+}
 
 /* Nosotros */
 
@@ -281,6 +280,21 @@ font-size: 8px;
         font-size: 50px;
     }
 }
+
+/* Excursiones */
+
+.fondo-dos{
+    background: linear-gradient(#259bf1, #bfbfbf);
+    
+}
+
+.fondo-dos section h2{
+    font-family: 'Rubik', sans-serif; 
+    font-size: 20px;
+    color: red;
+    text-shadow: 5px 5px 5px black;
+}
+
 
 /* Actividades*/
 
