@@ -1,27 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "rapel-outdoor-copia1",
   "version": "1.0.0",
-  "description": "",
-=======
-  "name": "rapel-outdoor-copia2",
-  "version": "1.0.0",
->>>>>>> ff0231643801441a1380e58ee83e659cc2ef4cd4
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss ./scss/style.scss ./css/style.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
-<<<<<<< HEAD
-  }
-=======
-  },
   "dependencies": {
     "abbrev": "^1.1.1",
     "agent-base": "^6.0.2",
@@ -113,7 +93,7 @@
     "lines-and-columns": "^1.2.4",
     "locate-path": "^5.0.0",
     "lodash": "^4.17.21",
-    "lru-cache": "^7.17.0",
+    "lru-cache": "^7.18.1",
     "make-fetch-happen": "^10.2.1",
     "map-obj": "^4.3.0",
     "meow": "^9.0.0",
@@ -207,6 +187,14 @@
     "yargs": "^17.7.1",
     "yargs-parser": "^20.2.9"
   },
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "description": ""
->>>>>>> ff0231643801441a1380e58ee83e659cc2ef4cd4
 }
