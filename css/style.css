@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@500&display=swap");
 * {
   margin: 0;
@@ -11,9 +10,11 @@ font-family: 'Rubik', sans-serif;
 */
 .header {
   background-color: #259BF1; }
-  .header nav div h1 {
-    font-family: 'Rubik', sans-serif;
-    cursor: pointer; }
+  .header h1 {
+    font-family: 'Rubik', sans-serif; }
+  .header img {
+    width: 120px;
+    text-align: center; }
 
 @media (min-width: 450px) {
   .parrafo {
@@ -69,22 +70,10 @@ font-family: 'Rubik', sans-serif;
     text-shadow: 5px 5px 5px black; }
   .nos-item1 p {
     font-size: 15px; }
-
-.nos-item2 {
-  padding: 15px;
-  align-items: center;
-  text-align: center; }
-  .nos-item2 iframe {
+  .nos-item1 iframe {
     background-size: contain;
     width: 100%;
     border-radius: 25px; }
-  .nos-item2 h3 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    color: red;
-    text-shadow: 5px 5px 5px black; }
-  .nos-item2 p {
-    font-size: 15px; }
 
 .grupo-equipo {
   justify-content: center;
@@ -95,5 +84,3 @@ font-family: 'Rubik', sans-serif;
     font-size: 30px;
     color: red;
     text-shadow: 5px 5px 5px black; }
-=======
->>>>>>> ff0231643801441a1380e58ee83e659cc2ef4cd4

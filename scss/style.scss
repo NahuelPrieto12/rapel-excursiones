@@ -13,9 +13,12 @@ font-family: 'Rubik', sans-serif;
 
 .header{
     background-color: #259BF1;
-    nav div h1{
+    h1{
         font-family: 'Rubik', sans-serif;
-        cursor: pointer;
+    }
+    img{
+        width: 120px;
+        text-align: center;
     }
 }
 
@@ -95,25 +98,10 @@ font-family: 'Rubik', sans-serif;
     p{
         font-size: 15px;
     }
-}
-
-.nos-item2{
-    padding: 15px;
-    align-items: center;
-    text-align: center;
     iframe{
         background-size: contain;
         width: 100%;
         border-radius: 25px;
-    }
-    h3{
-        font-family: 'Rubik', sans-serif; 
-        font-size: 30px;
-        color: red;
-        text-shadow: 5px 5px 5px black;
-    }
-    p{
-        font-size: 15px;
     }
 }
 
@@ -129,3 +117,14 @@ font-family: 'Rubik', sans-serif;
     }
 }
 
+    @media (min-width: 450px){
+    }
+    
+    @media (min-width: 576px){
+    }
+    
+    @media (min-width: 992px){
+    }
+    
+    @media (min-width: 1200px){
+    }
