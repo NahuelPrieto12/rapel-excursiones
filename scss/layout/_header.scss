@@ -1,0 +1,60 @@
+/*Header*/
+
+.header{
+    background-color: #259BF1;
+    h1{
+        font-family: 'Rubik', sans-serif;
+    }
+    img{
+        width: 120px;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (min-width: 450px){
+    .parrafo{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 23px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px){
+    .parrafo{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 26px;
+    }
+    .btn{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px){
+    .parrafo{
+        font-size: 38px;
+    }
+    .title{
+        font-size: 45px;
+    }
+    .btn{
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1200px){
+    .parrafo{
+        font-size: 40px;
+    }
+    .title{
+        font-size: 50px;
+    }
+}
