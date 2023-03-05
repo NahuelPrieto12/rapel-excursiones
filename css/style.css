@@ -52,7 +52,7 @@ font-family: 'Rubik', sans-serif;
   background-color: #BFBFBF; }
 
 /*Nosotros*/
-.flex-container {
+.fondo {
   background: linear-gradient(#259bf1, #bfbfbf); }
 
 .nos-item1 {
@@ -81,23 +81,42 @@ font-family: 'Rubik', sans-serif;
 .grupo-equipo {
   justify-content: center;
   text-align: center;
-  padding: 15px; }
+  padding: 25px; }
   .grupo-equipo h3 {
+    padding: 2%;
     font-family: 'Rubik', sans-serif;
     font-size: 35px;
     color: red;
     text-shadow: 5px 5px 5px black; }
+  .grupo-equipo .equipo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px; }
 
 @media (min-width: 450px) {
   .nos-item1 h3 {
     font-size: 40px; }
   .nos-item1 p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .grupo-equipo {
+    padding: 50px; }
+    .grupo-equipo h3 {
+      font-size: 40px; }
+    .grupo-equipo .equipo h4 {
+      font-size: 30px; }
+    .grupo-equipo .equipo a, .grupo-equipo .equipo p {
+      font-size: 20px; } }
 
 @media (min-width: 576px) {
   .nos-item1 h3 {
     font-size: 45px; }
   .nos-item1 p {
+    font-size: 25px; }
+  .grupo-equipo h3 {
+    font-size: 45px; }
+  .grupo-equipo .equipo h4 {
+    font-size: 35px; }
+  .grupo-equipo .equipo a, .grupo-equipo .equipo p {
     font-size: 25px; } }
 
 @media (min-width: 992px) {
@@ -106,10 +125,75 @@ font-family: 'Rubik', sans-serif;
     .nos-item1 h3 {
       font-size: 45px; }
     .nos-item1 p {
-      font-size: 25px; } }
+      font-size: 25px; }
+  .grupo-equipo h3 {
+    font-size: 45px; }
+  .grupo-equipo div {
+    display: flex;
+    text-align: center;
+    padding: 15px; }
+  .equipo {
+    flex-direction: column;
+    width: 100%; }
+    .equipo h4 {
+      font-size: 30px; }
+    .equipo a, .equipo p {
+      font-size: 20px; } }
 
 @media (min-width: 1200px) {
   .nos-item1 h3 {
     font-size: 50px; }
   .nos-item1 p {
-    font-size: 35px; } }
+    font-size: 35px; }
+  .grupo-equipo h3 {
+    font-size: 50px; }
+  .equipo {
+    flex-direction: column;
+    width: 100%; }
+    .equipo h4 {
+      font-size: 35px; }
+    .equipo a, .equipo p {
+      font-size: 25px; } }
+
+/*Formulario*/
+.fondo section img {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px; }
+
+.form {
+  padding: 15px; }
+  .form legend {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    color: red;
+    text-shadow: 2px 2px 2px black; }
+  .form fieldset {
+    display: flex;
+    flex-direction: column; }
+  .form select {
+    text-align: center;
+    width: 50%; }
+  .form .aventura {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3%; }
+  .form div {
+    padding: 2%;
+    text-align: center; }
+  .form input {
+    padding: 3%;
+    margin: 5px; }
+  .form .input1 {
+    background-color: gray;
+    border-color: black; }
+  .form .input2 {
+    font-size: 20px;
+    background-color: red;
+    border-color: black; }
+  .form #vertigo {
+    text-align: center;
+    width: 50%; }

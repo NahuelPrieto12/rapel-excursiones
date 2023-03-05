@@ -1,0 +1,54 @@
+/*Formulario*/
+
+.fondo section img{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.form{
+    padding: 15px;
+    legend{
+        text-align: center;
+        margin: 15px;
+        font-family: 'Rubik', sans-serif; 
+        font-size: 25px;
+        color: red;
+        text-shadow: 2px 2px 2px black;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    select{
+        text-align: center;
+        width: 50%;
+    }
+    .aventura{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+    div{
+        padding: 2%;
+        text-align: center;
+    }
+    input{
+        padding: 3%;
+        margin: 5px;
+    }
+    .input1{
+        background-color: gray;
+        border-color: black;
+    }
+    .input2{
+        font-size: 20px;
+        background-color:red;
+        border-color: black;
+    }
+    #vertigo{
+        text-align: center;
+        width: 50%;
+    }
+}

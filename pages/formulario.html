@@ -44,11 +44,11 @@
             </nav>
         </section>
     </header>
-    <main class="fondo-dos">
+    <main class="fondo">
         <section>
             <img src="../assets/img/nosotros.jpg" alt="">
         </section>
-        <section>
+        <section class="form">
             <form action="" method="post">
                 <fieldset>
                     <legend>Datos Personales</legend>
@@ -61,7 +61,7 @@
                     <label for="edad">¿Cual es tu edad?</label>
                     <input type="number" id="edad" placeholder="ingresa tu edad aquí">
                 </fieldset>
-                <fieldset>
+                <fieldset class="aventura">
                     <legend>Grado de aventura</legend>
                     <select name="aventura" id="">
                         <option value="extrma">Extrema</option>
@@ -75,8 +75,10 @@
                         <option value="leve">Leve</option>
                     </select>
                 </fieldset>
-                <input type="submit">
-                <input type="reset" value="Reset">
+                <div>
+                    <input class="input1" type="reset" value="Reset">
+                    <input class="input2" type="submit">
+                </div>
             </form>
         </section>
     </main>
