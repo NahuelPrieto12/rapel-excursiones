@@ -8,23 +8,27 @@
 
 .form{
     padding: 15px;
-    legend{
-        text-align: center;
-        margin: 15px;
-        font-family: 'Rubik', sans-serif; 
-        font-size: 25px;
-        color: red;
-        text-shadow: 2px 2px 2px black;
-    }
     fieldset{
         display: flex;
         flex-direction: column;
     }
+    legend{
+        text-align: center;
+        font-family: 'Rubik', sans-serif; 
+        font-size: 30px;
+        color: red;
+        text-shadow: 4px 4px 4px black;
+    }
+    label{
+        text-align: center;
+        font-size: 20px;
+    }
     select{
         text-align: center;
-        width: 50%;
+        width: 60%;
+        font-size: 25px;
     }
-    .aventura{
+    .form2{
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -47,8 +51,77 @@
         background-color:red;
         border-color: black;
     }
-    #vertigo{
-        text-align: center;
-        width: 50%;
+}
+
+
+@media (min-width: 450px){
+    .form{
+        legend{
+            font-size: 38px;
+        }
+        label{
+            font-size: 25px;
+        }
+        .input2{
+            font-size: 30px;
+        }
     }
+    .sugerencias{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 576px){
+    .form{
+        legend{
+            font-size: 45px;
+        }
+        label{
+            font-size: 33px;
+        }
+        .input2{
+            font-size: 35px;
+        }
+    }
+    .sugerencias{
+        font-size: 35px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px){
+    .fondo{
+        display: grid;
+        grid-template-columns: repeat(2fr);
+        grid-template-rows: repeat(2fr);
+        grid-template-areas:
+        "form1 form1"
+        "img img"
+        "form2 form2"
+        ;
+    }
+    section form{
+        .form1{grid-area: form1;}
+        .form2{grid-area: form2;}
+        }
+    section img{grid-area: img;}
+
+    .form{
+        legend{
+            font-size: 50px;
+        }
+        label{
+            font-size: 40px;
+        }
+        .input2{
+            font-size: 40px;
+        }
+    }
+    .sugerencias{
+        font-size: 40px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px){
 }
