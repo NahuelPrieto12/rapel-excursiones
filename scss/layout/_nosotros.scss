@@ -1,7 +1,7 @@
 /*Nosotros*/
 
-.fondo{
-    background: linear-gradient(#259bf1, #bfbfbf);
+.fondo-nos{
+    background: $back-fondo
 }
 
 .nos-item1{
@@ -18,12 +18,24 @@
         width: 100%;
     }
     h3{
-        font-family: 'Rubik', sans-serif; 
+        font-family: $font-title; 
         font-size: 35px;
-        color: red;
+        color: $color-title;
         text-shadow: 5px 5px 5px black;
     }
+    h3:hover{
+        animation-name: jello;
+        -webkit-animation-name: jello;
+        -moz-animation-name: jello;
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+    transform-origin: center;
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+    }
     p{
+        font-family: $font-parr;
         font-size: 15px;
     }
     iframe{
@@ -36,50 +48,85 @@
 .grupo-equipo{
     justify-content: center;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     h3{
-        padding: 2%;
-        font-family: 'Rubik', sans-serif; 
+        padding: 10px;
+        font-family: $font-title; 
         font-size: 35px;
-        color: red;
+        color: $color-title;
         text-shadow: 5px 5px 5px black;
     }
-    .equipo img{
+    h3:hover{
+        animation-name: jello;
+        -webkit-animation-name: jello;
+        -moz-animation-name: jello;
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+    transform-origin: center;
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+    }
+    .equipo{ 
+        div img{
         width: 100%;
-        height: 100%;
-        border-radius: 25px;
+        border-radius: 60%;
+        padding: 15%;
+        }
+        h4{
+        font-family: $font-parr;
+        font-size: 25px;
+        }
+        a{
+            img{
+                width: 50px;
+            }
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        p{
+            font-family: $font-parr;
+            font-size: 18px;
+            margin: 25px;
+        }
     }
 }
 
-    @media (min-width: 450px){
+    @media (min-width: 375px){
         .nos-item1{
             h3{
-                font-size: 40px;
+                font-size: 35px;
             }
             p{
                 font-size: 20px;
             }
         }
         .grupo-equipo{
-            padding: 50px;
+            padding: 15px;
             h3{
-                font-size: 40px;
+                font-size: 35px;
             }
         .equipo{
             h4{
                 font-size: 30px;
             }
-            a,p{
-                font-size: 20px;
+            a{
+                font-size: 35px;
+            }
+            p{
+                font-size: 25px;
             }
         }
         }
     }
     
-    @media (min-width: 576px){
+    @media (min-width: 425px){
         .nos-item1{
             h3{
-                font-size: 45px;
+                font-size: 42px;
             }
             p{
                 font-size: 25px;
@@ -93,63 +140,124 @@
                 h4{
                     font-size: 35px;
                 }
-                a,p{
+                a{
+                    font-size: 40px;
+                }
+                p{
                     font-size: 25px;
                 }
             }
         }
     }
     
-    @media (min-width: 992px){
+    @media (min-width: 768px){
         .nos-item1{ 
             display: flex;
             h3{
-                font-size: 45px;
+                font-size: 40px;
             }
             p{
-                font-size: 25px;
-            }
-        }
-        .grupo-equipo h3{
-            font-size: 45px;
-        }
-        .grupo-equipo div{
-            display: flex;
-            text-align: center;
-            padding: 15px;
-        }
-        .equipo{
-            flex-direction: column;
-            width: 100%;
-            h4{
-                font-size: 30px;
-            }
-            a,p{
                 font-size: 20px;
+            }
+        }
+        .grupo-equipo{
+            h3{
+                font-size: 45px;
+            }
+            div{
+                display: flex;
+                text-align: center;
+            }
+            .equipo{
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                img{
+                    text-align: center;
+                }
+                h4{
+                    font-size: 25px;
+                }
+                a{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 20px;
+                }
             }
         }
     }
     
-    @media (min-width: 1200px){
+    @media (min-width: 1024px){
         .nos-item1{
             h3{
                 font-size: 50px;
             }
             p{
-                font-size: 35px;
-            }
-        }
-        .grupo-equipo h3{
-            font-size: 50px;
-        }
-        .equipo{
-            flex-direction: column;
-            width: 100%;
-            h4{
-                font-size: 35px;
-            }
-            a,p{
                 font-size: 25px;
+            }
+        }
+        .grupo-equipo{
+            h3{
+                font-size: 40px;
+            }
+            div{
+                display: flex;
+                text-align: center;
+            }
+            .equipo{
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                img{
+                    text-align: center;
+                }
+                h4{
+                    font-size: 29px;
+                }
+                a{
+                    font-size: 39px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1444px){
+        .nos-item1{
+            h3{
+                font-size: 55px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+        .grupo-equipo{
+            h3{
+                font-size: 55px;
+            }
+            div{
+                display: flex;
+                text-align: center;
+            }
+            .equipo{
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                img{
+                    text-align: center;
+                }
+                h4{
+                    font-size: 35px;
+                }
+                a{
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 30px;
+                }
             }
         }
     }
