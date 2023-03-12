@@ -1,48 +1,5 @@
-/*ANIMACIONES*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
-@keyframes jello {
-  from, 11.1%, to {
-    transform: translate3d(0, 0, 0); }
-  22.2% {
-    transform: skewX(-12.5deg) skewY(-12.5deg); }
-  33.3% {
-    transform: skewX(6.25deg) skewY(6.25deg); }
-  44.4% {
-    transform: skewX(-3.125deg) skewY(-3.125deg); }
-  55.5% {
-    transform: skewX(1.5625deg) skewY(1.5625deg); }
-  66.6% {
-    transform: skewX(-0.78125deg) skewY(-0.78125deg); }
-  77.7% {
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
-  88.8% {
-    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
-
-@keyframes shakefix {
-  0% {
-    transform: translate(1px, 1px); }
-  10% {
-    transform: translate(-1px, -2px); }
-  20% {
-    transform: translate(-3px, 0px); }
-  30% {
-    transform: translate(3px, 2px); }
-  40% {
-    transform: translate(1px, -1px); }
-  50% {
-    transform: translate(-1px, 2px); }
-  60% {
-    transform: translate(-3px, 1px); }
-  70% {
-    transform: translate(3px, 1px); }
-  80% {
-    transform: translate(-1px, -1px); }
-  90% {
-    transform: translate(1px, 2px); }
-  100% {
-    transform: translate(1px, -2px); } }
-
 * {
   margin: 0;
   padding: 0;
@@ -57,10 +14,13 @@ font-family: 'Rubik', sans-serif;
 .header {
   background-color: #259BF1; }
   .header h1 {
-    font-family: 'Rubik', sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    margin: 0px; }
   .header img {
     width: 120px;
     text-align: center; }
+  .header a {
+    margin: 0px; }
 
 @media (min-width: 450px) {
   .parrafo {
@@ -560,7 +520,7 @@ fieldset legend {
 
 @media (min-width: 425px) {
   .fondo-dos section h2 {
-    font-size: 8vw; }
+    font-size: 7vw; }
   .fondo-dos p {
     font-size: 5vw; } }
 
@@ -568,7 +528,7 @@ fieldset legend {
   .contenedor-exc {
     flex-direction: row; }
   .card h3 {
-    font-size: 7vw; }
+    font-size: 6vw; }
   .card ul {
     font-size: 3vw; }
   .card .btn-card a {
@@ -580,7 +540,7 @@ fieldset legend {
 
 @media (min-width: 1024px) {
   .card h3 {
-    font-size: 6vw; }
+    font-size: 5vw; }
   .card ul {
     font-size: 3vw; }
   .card .btn-card a {
@@ -593,7 +553,106 @@ fieldset legend {
     font-size: 4vw; } }
 
 @media (min-width: 1440px) {
+  .card h3 {
+    font-size: 4vw; }
+  .card ul {
+    font-size: 3vw; }
+  .card .btn-card a {
+    font-size: 2vw; }
+  .card .btn-card img {
+    width: 5vw; }
   .fondo-dos section h2 {
     font-size: 6vw; }
   .fondo-dos p {
     font-size: 3vw; } }
+
+* {
+  border: 1px solid red; }
+
+.fondo-act {
+  background: linear-gradient(#259bf1, #bfbfbf); }
+  .fondo-act section h2 {
+    font-size: "Open Sans", sans-serif;
+    color: red;
+    text-shadow: 4px 4px 4px black;
+    font-size: 10vw;
+    text-align: center;
+    padding: 15px; }
+  .fondo-act section h2:hover {
+    animation-name: jello;
+    -webkit-animation-name: jello;
+    -moz-animation-name: jello;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center; }
+  .fondo-act p {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 6vw;
+    margin: 0px 20px 0px 20px; }
+
+.tarj-act {
+  display: flex;
+  flex-direction: column;
+  padding: 15px; }
+  .tarj-act p {
+    font-family: "Roboto", sans-serif;
+    font-size: 6vw; }
+  .tarj-act img {
+    background-size: contain;
+    border-radius: 15px;
+    padding: 10px; }
+  .tarj-act .btn-act {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .tarj-act .btn-act p a {
+      color: red;
+      text-decoration: none;
+      font-size: 8vw; }
+
+/*ANIMACIONES*/
+@keyframes jello {
+  from, 11.1%, to {
+    transform: translate3d(0, 0, 0); }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg); }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg); }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg); }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg); }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+  77.7% {
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
+  88.8% {
+    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+
+@keyframes shakefix {
+  0% {
+    transform: translate(1px, 1px); }
+  10% {
+    transform: translate(-1px, -2px); }
+  20% {
+    transform: translate(-3px, 0px); }
+  30% {
+    transform: translate(3px, 2px); }
+  40% {
+    transform: translate(1px, -1px); }
+  50% {
+    transform: translate(-1px, 2px); }
+  60% {
+    transform: translate(-3px, 1px); }
+  70% {
+    transform: translate(3px, 1px); }
+  80% {
+    transform: translate(-1px, -1px); }
+  90% {
+    transform: translate(1px, 2px); }
+  100% {
+    transform: translate(1px, -2px); } }

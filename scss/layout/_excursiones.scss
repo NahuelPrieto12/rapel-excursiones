@@ -92,7 +92,7 @@
 @media (min-width: 425px){
     .fondo-dos{
         section h2{
-            font-size: 8vw;
+            font-size: 7vw;
         }
         p{
             font-size: 5vw;
@@ -106,7 +106,7 @@
     }
     .card{
         h3{
-            font-size: 7vw;
+            font-size: 6vw;
         }
         ul{
             font-size: 3vw;
@@ -128,7 +128,7 @@
 @media (min-width: 1024px){
     .card{
         h3{
-            font-size: 6vw;
+            font-size: 5vw;
         }
         ul{
             font-size: 3vw;
@@ -153,6 +153,22 @@
 }
 
 @media (min-width: 1440px){
+    .card{
+        h3{
+            font-size: 4vw;
+        }
+        ul{
+            font-size: 3vw;
+        }
+        .btn-card{
+            a{
+            font-size: 2vw;
+            }
+            img{
+                width: 5vw;
+            }
+        }
+    }
     .fondo-dos{
         section h2{
             font-size: 6vw;

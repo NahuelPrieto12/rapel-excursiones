@@ -1,0 +1,57 @@
+*{
+    border: 1px solid red
+  }
+
+.fondo-act{
+    background: linear-gradient(#259bf1, #bfbfbf);
+    section h2{
+        font-size: $font-title;
+        color: $color-title;
+        text-shadow: $shadow-title;
+        font-size: 10vw;
+        text-align: center;
+        padding: 15px;
+    }
+    section h2:hover{
+        animation-name: jello;
+        -webkit-animation-name: jello;
+        -moz-animation-name: jello;
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+    transform-origin: center;
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+    }
+    p{
+        font-family: $font-parr;
+        text-align: center;
+        font-size: 6vw;
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+.tarj-act{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    p{
+        font-family: $font-parr;
+        font-size: 6vw;
+    }
+    img{
+        background-size: contain;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .btn-act{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p a{
+            color: red;
+            text-decoration: none;
+            font-size: 8vw;
+        }
+    }
+}
