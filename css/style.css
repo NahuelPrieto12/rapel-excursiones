@@ -656,7 +656,7 @@ fieldset legend {
     -webkit-transform: translatex(30px);
     -moz-transform: translatex(30px); }
   .card img {
-    height: auto;
+    width: auto;
     border-radius: 15px;
     background-size: cover; }
   .card ul {
@@ -701,8 +701,10 @@ fieldset legend {
     font-size: 3vw; }
   .card .btn-card img {
     width: 7vw; }
-  .card div div div img {
-    background-size: contain; } }
+  .card img {
+    width: auto; }
+  .card .carousel-item {
+    width: 100%; } }
 
 @media (min-width: 1024px) {
   .card h3 {
@@ -767,10 +769,12 @@ fieldset legend {
   .tarj-act p {
     font-family: "Roboto", sans-serif;
     font-size: 6vw; }
-  .tarj-act img {
+  .tarj-act .img-act {
     background-size: contain;
     border-radius: 15px;
-    padding: 10px; }
+    padding: 10px;
+    -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .tarj-act .btn-act {
     display: flex;
     align-items: center;
@@ -847,3 +851,32 @@ fieldset legend {
     transform: scale(1) translateX(-100px);
     -webkit-transform-origin: right;
     transform-origin: right; } }
+
+/* animation slide-in-elliptic-top-fwd */
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1; } }
+
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1; } }
