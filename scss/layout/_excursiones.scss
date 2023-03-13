@@ -81,6 +81,7 @@
 
 .contenedor-exc{
     margin: 5%;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,6 +163,7 @@
         ul{
             font-size: 3vw;
         }
+        margin: 50px;
         .btn-card{
             a{
             font-size: 2vw;
@@ -173,10 +175,10 @@
     }
     .fondo-dos{
         section h2{
-            font-size: 6vw;
+            font-size: 4vw;
         }
         p{
-            font-size: 3vw;
+            font-size: 2vw;
         }
     }
 }

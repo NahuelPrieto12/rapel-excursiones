@@ -14,6 +14,11 @@
         margin: 0px;
     }
 }
+.coment-header{
+    margin: 0px;
+}
+
+
 
 
 @media (min-width: 450px){
@@ -25,6 +30,9 @@
     }
     .btn{
         font-size: 18px;
+    }
+    .coment-header{
+        font-size: 20px;
     }
 }
 
@@ -38,6 +46,9 @@
     .btn{
         font-size: 24px;
     }
+    .coment-header{
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 992px){
@@ -45,10 +56,13 @@
         font-size: 38px;
     }
     .title{
-        font-size: 45px;
+        font-size: 42px;
     }
     .btn{
         font-size: 35px;
+    }
+    .coment-header{
+        font-size: 26px;
     }
 }
 
@@ -58,5 +72,8 @@
     }
     .title{
         font-size: 50px;
+    }
+    .coment-header{
+        font-size: 30px;
     }
 }
