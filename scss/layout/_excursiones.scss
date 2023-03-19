@@ -51,9 +51,7 @@
         -moz-transform: translatex(30px);
     }
     img{
-        width: auto;
         border-radius: 15px;
-        background-size: cover;
     }
     ul{
         font-size: 5vw;
@@ -121,9 +119,6 @@
             img{
                 width: 7vw;
             }
-        }
-        img{
-            width: auto;
         }
         .carousel-item{
             width: 100%;

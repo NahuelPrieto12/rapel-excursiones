@@ -14,7 +14,7 @@ font-family: 'Rubik', sans-serif;
 .main-index {
   display: flex;
   flex-direction: column; }
-  .main-index div img {
+  .main-index img {
     display: flex;
     background-position-x: -100px;
     z-index: 1;
@@ -218,7 +218,8 @@ font-family: 'Rubik', sans-serif;
 
 /* footer*/
 .foot-cont {
-  background-color: #BFBFBF; }
+  background-color: #BFBFBF;
+  margin: 0; }
 
 /*Nosotros*/
 .fondo-nos {
@@ -232,7 +233,7 @@ font-family: 'Rubik', sans-serif;
   .nos-item1 img {
     width: 100%;
     background-size: contain;
-    border-radius: 25px; }
+    border-radius: 15px; }
   .nos-item1 div {
     width: 100%; }
   .nos-item1 h3 {
@@ -656,9 +657,7 @@ fieldset legend {
     -webkit-transform: translatex(30px);
     -moz-transform: translatex(30px); }
   .card img {
-    width: auto;
-    border-radius: 15px;
-    background-size: cover; }
+    border-radius: 15px; }
   .card ul {
     font-size: 5vw; }
   .card .btn-card a {
@@ -701,8 +700,6 @@ fieldset legend {
     font-size: 3vw; }
   .card .btn-card img {
     width: 7vw; }
-  .card img {
-    width: auto; }
   .card .carousel-item {
     width: 100%; } }
 
@@ -763,26 +760,78 @@ fieldset legend {
     margin: 0px 20px 0px 20px; }
 
 .tarj-act {
+  background: #259bf1;
+  background: linear-gradient(180deg, #259bf1 0%, #bfbfbf 50%, #259bf1 100%);
   display: flex;
   flex-direction: column;
-  padding: 15px; }
-  .tarj-act p {
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 1rem; }
+  .tarj-act h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 6vw; }
+    font-size: 2rem; }
+  .tarj-act p {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding: 15px; }
   .tarj-act .img-act {
+    padding: 20px;
+    margin: 30px;
     background-size: contain;
     border-radius: 15px;
     padding: 10px;
-    -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+    transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg); }
+  .tarj-act .back-act {
+    display: none; }
   .tarj-act .btn-act {
+    background-color: #8a8484;
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    margin: 1rem;
+    justify-content: center;
+    border-radius: 15px; }
     .tarj-act .btn-act p a {
       color: red;
       text-decoration: none;
       font-size: 8vw; }
+
+.act-title {
+  text-align: center; }
+  .act-title h3 {
+    margin: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem; }
+  .act-title .btn-act {
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    border-radius: 15px; }
+    .act-title .btn-act p a {
+      color: red;
+      text-decoration: none;
+      font-size: 8vw; }
+
+.act-marcas {
+  display: flex;
+  flex-direction: column;
+  background-color: #8a8484;
+  border: 1px solid #635b5b;
+  padding: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
+  border-radius: 15px;
+  text-align: center; }
+  .act-marcas img {
+    width: 40%;
+    height: auto; }
+  .act-marcas h3 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .act-marcas p {
+    font-size: 1rem; }
 
 /*ANIMACIONES*/
 @keyframes jello {

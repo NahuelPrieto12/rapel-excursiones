@@ -3,7 +3,7 @@
 .main-index{
     display: flex;
     flex-direction: column;
-    div img{
+    img{
         display: flex;
         background-position-x: -100px;
         z-index: 1;
@@ -37,8 +37,6 @@
         -webkit-animation-iteration-count: infinite;
         -moz-animation-iteration-count: infinite;
     }
-
-
 }
 
 .title-index{
@@ -85,6 +83,7 @@ background-color: #bfbfbf;
         width: 300px;
     }
 }
+
 
 @media (min-width: 375px){
     .title-index{
