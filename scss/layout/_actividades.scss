@@ -21,12 +21,6 @@
         -webkit-transform-origin: center;
         -moz-transform-origin: center;
     }
-    p{
-        font-family: $font-parr;
-        text-align: center;
-        font-size: 6vw;
-        margin: 0px 20px 0px 20px;
-    }
 }
 
 .tarj-act{
@@ -67,10 +61,15 @@
     margin: 1rem;
         justify-content: center;
         border-radius: 15px;
-        p a{
+        align-items: center;
+        a{
+            margin: 0px;
             color: red;
             text-decoration: none;
-            font-size: 8vw;
+            font-size: 7vw;
+        }
+        img{
+            width: 15%;
         }
     }
 }
@@ -81,18 +80,25 @@
         font-family: $font-title;
         font-size: 2rem;
     }
+    p{
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
     .btn-act{
         align-items: center;
         display: flex;
         margin: 1rem;
-            justify-content: center;
-            border-radius: 15px;
-            p a{
+        justify-content: center;
+        border-radius: 15px;
+            a{
                 color: red;
                 text-decoration: none;
                 font-size: 8vw;
             }
-        }
+            img{
+                width: 15%;
+            }
+    }
 }
 .act-marcas{
 display: flex;
@@ -117,21 +123,176 @@ flex-direction: column;
 }
 
 @media (min-width: 375px){
-
+    .tarj-act{
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .act-title{
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .act-marcas{
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
 }
 
-@media (min-width: 425px){
-
+@media (min-width: 525px){
+    .tarj-act{
+        p{
+            font-size: 2rem;
+        }
+    }
+    .act-title{
+        h3{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    .act-marcas{
+        h3{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
 }
 
 @media (min-width: 768px){
-
+    .fondo-act{
+        section h2{
+            font-size: 7vw;
+        }
+    }
+    .act-title{
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2.5;
+            margin: 1rem 3rem 1rem 3rem;
+        }
+    }
+    .act-marcas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .fondo-act{
+        .img-act{
+            margin-bottom: 3rem;
+        }
+    }
 }
 
 @media (min-width: 1024px){
-
+    .tarj-act{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "title img" 
+        "btn btn"
+        ;
+        align-items: center;
+        .btn-act{
+            grid-area: btn;
+            padding: 0px;
+            a{
+                font-size: 2rem;
+            }
+            img{
+                width: 7%;
+            }
+        }
+        .img-act{
+            width: auto;
+            grid-area: img;
+        }
+        .tit-act{
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            grid-area: title;
+        }
+    }
+    .act-title{
+        h3{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 3;
+            margin: 1rem 4rem 1rem 4rem;
+        }
+        .btn-act{
+            a{
+                font-size: 3rem;
+            }
+            img{
+                width: 9%;
+            }
+        }
+    }
+    .act-marcas{
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+    }
 }
 
 @media (min-width: 1440px){
-
+    .act-content{
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "title marca-uno"
+        "title marca-dos"
+        "title marca-tres"
+        ;
+        .act-marcas{ 
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            uno{
+            grid-area: marca-uno;
+            }
+            dos{
+            grid-area: marca-dos;
+            }
+            tres{
+            grid-area: marca-tres;
+            }
+        }   
+        .act-title{
+            grid-area: title;
+        }
+    }
 }

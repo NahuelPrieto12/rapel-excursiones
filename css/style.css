@@ -753,11 +753,6 @@ fieldset legend {
     transform-origin: center;
     -webkit-transform-origin: center;
     -moz-transform-origin: center; }
-  .fondo-act p {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    font-size: 6vw;
-    margin: 0px 20px 0px 20px; }
 
 .tarj-act {
   background: #259bf1;
@@ -792,11 +787,15 @@ fieldset legend {
     display: flex;
     margin: 1rem;
     justify-content: center;
-    border-radius: 15px; }
-    .tarj-act .btn-act p a {
+    border-radius: 15px;
+    align-items: center; }
+    .tarj-act .btn-act a {
+      margin: 0px;
       color: red;
       text-decoration: none;
-      font-size: 8vw; }
+      font-size: 7vw; }
+    .tarj-act .btn-act img {
+      width: 15%; }
 
 .act-title {
   text-align: center; }
@@ -804,16 +803,21 @@ fieldset legend {
     margin: 1rem;
     font-family: "Open Sans", sans-serif;
     font-size: 2rem; }
+  .act-title p {
+    margin: 1rem;
+    font-size: 1.5rem; }
   .act-title .btn-act {
     align-items: center;
     display: flex;
     margin: 1rem;
     justify-content: center;
     border-radius: 15px; }
-    .act-title .btn-act p a {
+    .act-title .btn-act a {
       color: red;
       text-decoration: none;
       font-size: 8vw; }
+    .act-title .btn-act img {
+      width: 15%; }
 
 .act-marcas {
   display: flex;
@@ -832,6 +836,105 @@ fieldset legend {
     font-weight: bold; }
   .act-marcas p {
     font-size: 1rem; }
+
+@media (min-width: 375px) {
+  .tarj-act p {
+    font-size: 1.5rem; }
+  .act-title h3 {
+    font-size: 2rem; }
+  .act-title p {
+    font-size: 1.5rem; }
+  .act-marcas h3 {
+    font-size: 2rem; }
+  .act-marcas p {
+    font-size: 1.5rem; } }
+
+@media (min-width: 525px) {
+  .tarj-act p {
+    font-size: 2rem; }
+  .act-title h3 {
+    font-size: 2.5rem; }
+  .act-title p {
+    font-size: 2rem; }
+  .act-marcas h3 {
+    font-size: 2.5rem; }
+  .act-marcas p {
+    font-size: 2rem; } }
+
+@media (min-width: 768px) {
+  .fondo-act section h2 {
+    font-size: 7vw; }
+  .act-title h3 {
+    font-size: 3rem; }
+  .act-title p {
+    font-size: 2.5;
+    margin: 1rem 3rem 1rem 3rem; }
+  .act-marcas {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .act-marcas h3 {
+      font-size: 2rem; }
+    .act-marcas p {
+      font-size: 1.5rem; }
+  .fondo-act .img-act {
+    margin-bottom: 3rem; } }
+
+@media (min-width: 1024px) {
+  .tarj-act {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "title img"  "btn btn";
+    align-items: center; }
+    .tarj-act .btn-act {
+      grid-area: btn;
+      padding: 0px; }
+      .tarj-act .btn-act a {
+        font-size: 2rem; }
+      .tarj-act .btn-act img {
+        width: 7%; }
+    .tarj-act .img-act {
+      width: auto;
+      grid-area: img; }
+    .tarj-act .tit-act {
+      grid-area: title; }
+      .tarj-act .tit-act h3 {
+        font-size: 3rem; }
+      .tarj-act .tit-act p {
+        font-size: 1.5rem; }
+  .act-title h3 {
+    font-size: 3.5rem; }
+  .act-title p {
+    font-size: 3;
+    margin: 1rem 4rem 1rem 4rem; }
+  .act-title .btn-act a {
+    font-size: 3rem; }
+  .act-title .btn-act img {
+    width: 9%; }
+  .act-marcas h3 {
+    font-size: 3rem; }
+  .act-marcas p {
+    font-size: 2.5rem; } }
+
+@media (min-width: 1440px) {
+  .act-content {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "title marca-uno" "title marca-dos" "title marca-tres"; }
+    .act-content .act-marcas h3 {
+      font-size: 1.5rem; }
+    .act-content .act-marcas p {
+      font-size: 1.2rem; }
+    .act-content .act-marcas uno {
+      grid-area: marca-uno; }
+    .act-content .act-marcas dos {
+      grid-area: marca-dos; }
+    .act-content .act-marcas tres {
+      grid-area: marca-tres; }
+    .act-content .act-title {
+      grid-area: title; } }
 
 /*ANIMACIONES*/
 @keyframes jello {
