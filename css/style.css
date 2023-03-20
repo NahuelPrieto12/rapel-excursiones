@@ -261,6 +261,10 @@ font-family: 'Rubik', sans-serif;
     border-radius: 25px; }
 
 .grupo-equipo {
+  background: #259bf1;
+  background: linear-gradient(180deg, #259bf1 0%, #bfbfbf 50%, #259bf1 100%);
+  border-radius: 15px;
+  margin: 0rem 1rem;
   justify-content: center;
   text-align: center;
   padding: 15px; }
@@ -280,9 +284,11 @@ font-family: 'Rubik', sans-serif;
     transform-origin: center;
     -webkit-transform-origin: center;
     -moz-transform-origin: center; }
+  .grupo-equipo .equipo div {
+    width: auto; }
   .grupo-equipo .equipo div img {
     width: 100%;
-    border-radius: 60%;
+    border-radius: 50%;
     padding: 15%; }
   .grupo-equipo .equipo h4 {
     font-family: "Roboto", sans-serif;
@@ -405,10 +411,20 @@ font-family: 'Rubik', sans-serif;
 .fondo {
   background: linear-gradient(#259bf1, #bfbfbf); }
 
-.fondo section img {
+.carrusel {
+  display: flex;
+  max-width: auto;
   width: 100%;
-  padding: 10px;
-  border-radius: 25px; }
+  height: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  align-items: center; }
+  .carrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    margin: 5px; }
 
 .form {
   padding: 10px; }
@@ -639,11 +655,6 @@ fieldset legend {
 
 .card {
   background-color: #0071c2;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  margin: 10px 20px 25px;
-  border: solid 1px black;
   box-shadow: 5px 5px 5px black; }
   .card h3 {
     color: red;
@@ -656,8 +667,6 @@ fieldset legend {
     transform: translatex(30px);
     -webkit-transform: translatex(30px);
     -moz-transform: translatex(30px); }
-  .card img {
-    border-radius: 15px; }
   .card ul {
     font-size: 5vw; }
   .card .btn-card a {
@@ -675,14 +684,6 @@ fieldset legend {
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite; }
 
-.contenedor-exc {
-  margin: 5%;
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 @media (min-width: 425px) {
   .fondo-dos section h2 {
     font-size: 7vw; }
@@ -690,8 +691,6 @@ fieldset legend {
     font-size: 5vw; } }
 
 @media (min-width: 768px) {
-  .contenedor-exc {
-    flex-direction: row; }
   .card h3 {
     font-size: 6vw; }
   .card ul {

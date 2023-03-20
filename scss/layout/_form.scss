@@ -1,13 +1,24 @@
 /*Formulario*/
 
 .fondo{
-    background: $back-fondo
+    background: $back-fondo;
 }
 
-.fondo section img{
+.carrusel{
+    display: flex;
+    max-width: auto;
     width: 100%;
-    padding: 10px;
-    border-radius: 25px;
+    height: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+        margin: 5px;
+    }
 }
 
 .form{

@@ -31,11 +31,6 @@
 
 .card{
     background-color: #0071c2;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: 10px 20px 25px;
-    border: solid 1px black;
     box-shadow: 5px 5px 5px black;
     h3{
         color: red;
@@ -49,9 +44,6 @@
         transform: translatex(30px);
         -webkit-transform: translatex(30px);
         -moz-transform: translatex(30px);
-    }
-    img{
-        border-radius: 15px;
     }
     ul{
         font-size: 5vw;
@@ -77,15 +69,6 @@
     }
 }
 
-.contenedor-exc{
-    margin: 5%;
-    margin-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 @media (min-width: 375px){
 
 }
@@ -102,9 +85,6 @@
 }
 
 @media (min-width: 768px){
-    .contenedor-exc{
-        flex-direction: row;
-    }
     .card{
         h3{
             font-size: 6vw;
