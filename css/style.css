@@ -12,6 +12,7 @@ font-family: 'Rubik', sans-serif;
 */
 /*Main*/
 .main-index {
+  background: #BFBFBF;
   display: flex;
   flex-direction: column; }
   .main-index img {
@@ -47,9 +48,13 @@ font-family: 'Rubik', sans-serif;
     -moz-animation-iteration-count: infinite; }
 
 .title-index {
-  background-color: #bfbfbf;
+  background: #259bf1;
+  background: linear-gradient(180deg, #259bf1 0%, #bfbfbf 50%, #259bf1 100%);
+  border-radius: 15px;
+  margin: 1rem 1rem;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding: 15px; }
   .title-index h2 {
     font-family: "Open Sans", sans-serif;
     color: red;
@@ -125,6 +130,7 @@ font-family: 'Rubik', sans-serif;
     position: absolute;
     flex-direction: column;
     background-color: transparent;
+    background: none;
     text-align: left; }
     .title-index h2 {
       font-size: 5vw; }
@@ -289,7 +295,7 @@ font-family: 'Rubik', sans-serif;
   .grupo-equipo .equipo div img {
     width: 100%;
     border-radius: 50%;
-    padding: 15%; }
+    padding: 7%; }
   .grupo-equipo .equipo h4 {
     font-family: "Roboto", sans-serif;
     font-size: 25px; }
@@ -305,6 +311,10 @@ font-family: 'Rubik', sans-serif;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     margin: 25px; }
+  .grupo-equipo .name-equipo {
+    font-size: 35px;
+    margin: 1rem;
+    font-weight: bold; }
 
 @media (min-width: 375px) {
   .nos-item1 h3 {
@@ -410,21 +420,13 @@ font-family: 'Rubik', sans-serif;
 /*Formulario*/
 .fondo {
   background: linear-gradient(#259bf1, #bfbfbf); }
-
-.carrusel {
-  display: flex;
-  max-width: auto;
-  width: 100%;
-  height: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  align-items: center; }
-  .carrusel img {
+  .fondo .img-form {
+    display: flex;
+    width: 100%; }
+  .fondo section img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-    margin: 5px; }
+    margin: 2rem;
+    border-radius: 15px; }
 
 .form {
   padding: 10px; }
