@@ -74,7 +74,7 @@ font-family: 'Rubik', sans-serif;
     font-family: "Roboto", sans-serif;
     padding: 15px;
     font-size: 6vw; }
-  .title-index button {
+  .title-index .button {
     animation-name: shakefix;
     -webkit-animation-name: shakefix;
     -moz-animation-name: shakefix;
@@ -84,8 +84,8 @@ font-family: 'Rubik', sans-serif;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
-    width: 70%; }
-    .title-index button a {
+    width: 50%; }
+    .title-index .button a {
       font-size: 7vw;
       color: black;
       text-decoration: none; }
