@@ -674,8 +674,6 @@ fieldset p {
     font-size: 5vw; }
   .card .btn-card a {
     font-size: 5vw; }
-  .card .btn-card img {
-    width: 10vw; }
   .card .btn-card:hover {
     animation-name: shakefix;
     -webkit-animation-name: shakefix;
