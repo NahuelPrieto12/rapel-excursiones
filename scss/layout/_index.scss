@@ -3,6 +3,7 @@
 .main-index{
     background: #BFBFBF;
     display: flex;
+    position: relative;
     flex-direction: column;
     max-width: 100%;
     .contenedor-img{
@@ -15,21 +16,20 @@
         .img-fondo-2{
             width: 100%;
         }
-    p{
+    }
+    .aventuras{
         font-size: 8vw;
         display: flex;
         position: absolute;
-        top:35%;
-        left:80%;
-        width: auto;
         font-family: $font-title;
         color: $color-title;
         text-shadow: $shadow-title;
         text-orientation: upright;
         writing-mode: vertical-rl;
         opacity: 1;
-    }
-}
+        top: 10%;
+        left: 80%;
+        }
 }
 
 .title-index{

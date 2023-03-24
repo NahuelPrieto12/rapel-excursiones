@@ -14,6 +14,7 @@ font-family: 'Rubik', sans-serif;
 .main-index {
   background: #BFBFBF;
   display: flex;
+  position: relative;
   flex-direction: column;
   max-width: 100%; }
   .main-index .contenedor-img {
@@ -24,19 +25,18 @@ font-family: 'Rubik', sans-serif;
       display: none; }
     .main-index .contenedor-img .img-fondo-2 {
       width: 100%; }
-    .main-index .contenedor-img p {
-      font-size: 8vw;
-      display: flex;
-      position: absolute;
-      top: 35%;
-      left: 80%;
-      width: auto;
-      font-family: "Open Sans", sans-serif;
-      color: red;
-      text-shadow: 4px 4px 4px black;
-      text-orientation: upright;
-      writing-mode: vertical-rl;
-      opacity: 1; }
+  .main-index .aventuras {
+    font-size: 8vw;
+    display: flex;
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    color: red;
+    text-shadow: 4px 4px 4px black;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    opacity: 1;
+    top: 10%;
+    left: 80%; }
 
 .title-index {
   background: #259bf1;
@@ -471,6 +471,10 @@ font-family: 'Rubik', sans-serif;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite; }
   .form-dos fieldset p {
+    color: red;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 4px 4px 4px black;
+    font-size: 30px;
     padding: 15px; }
   .form-dos fieldset p:hover {
     animation-name: jello;

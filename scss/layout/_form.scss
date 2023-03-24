@@ -22,15 +22,7 @@
         @include titulos-position;
     }
     legend:hover{
-        animation-name: jello;
-        -webkit-animation-name: jello;
-        -moz-animation-name: jello;
-    animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-    transform-origin: center;
-        -webkit-transform-origin: center;
-        -moz-transform-origin: center;
+        @include animation-jello;
     }
     form fieldset label{
         text-align: center;
@@ -70,6 +62,7 @@
         @include animation-shakefix;
     }
     fieldset p{
+        @include titulos-decoration;
             padding: 15px;
     }
     fieldset p:hover{
