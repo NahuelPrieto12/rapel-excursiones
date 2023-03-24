@@ -47,15 +47,7 @@
     font-size: 8vw;
     }
     h2:hover{
-        animation-name: jello;
-        -webkit-animation-name: jello;
-        -moz-animation-name: jello;
-    animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-    transform-origin: center;
-        -webkit-transform-origin: center;
-        -moz-transform-origin: center;
+        @include animation-jello;
     }
     p{
         font-family: $font-parr;
@@ -63,15 +55,7 @@
         font-size: 6vw;
     }
     .button{
-        animation-name: shakefix;
-        -webkit-animation-name: shakefix;
-        -moz-animation-name: shakefix;
-    animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-    animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
+        @include animation-shakefix;
         a{
             font-size: 7vw;
         color: black;

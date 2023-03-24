@@ -1,0 +1,34 @@
+@mixin titulos-decoration{
+    color: $color-title;
+    font-family: $font-title;
+    text-shadow: 4px 4px 4px black;
+    font-size: 30px;
+}
+
+@mixin titulos-position{
+    text-align: center;
+}
+
+@mixin animation-shakefix {
+    animation-name: shakefix;
+    -webkit-animation-name: shakefix;
+    -moz-animation-name: shakefix;
+animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}
+
+@mixin animation-jello{
+    animation-name: jello;
+    -webkit-animation-name: jello;
+    -moz-animation-name: jello;
+animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+}

@@ -11,15 +11,7 @@
         padding: 15px;
     }
     section h2:hover{
-        animation-name: jello;
-        -webkit-animation-name: jello;
-        -moz-animation-name: jello;
-    animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-    transform-origin: center;
-        -webkit-transform-origin: center;
-        -moz-transform-origin: center;
+        @include animation-jello;
     }
 }
 

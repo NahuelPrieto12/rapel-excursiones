@@ -24,15 +24,7 @@
         text-shadow: 5px 5px 5px black;
     }
     h3:hover{
-        animation-name: jello;
-        -webkit-animation-name: jello;
-        -moz-animation-name: jello;
-    animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-    transform-origin: center;
-        -webkit-transform-origin: center;
-        -moz-transform-origin: center;
+        @include animation-jello;
     }
     p{
         font-family: $font-parr;
@@ -56,21 +48,10 @@
     padding: 15px;
     h3{
         padding: 10px;
-        font-family: $font-title; 
-        font-size: 35px;
-        color: $color-title;
-        text-shadow: 5px 5px 5px black;
+        @include titulos-decoration;
     }
     h3:hover{
-        animation-name: jello;
-        -webkit-animation-name: jello;
-        -moz-animation-name: jello;
-    animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-    transform-origin: center;
-        -webkit-transform-origin: center;
-        -moz-transform-origin: center;
+        @include animation-jello;
     }
     .equipo{ 
         div{
