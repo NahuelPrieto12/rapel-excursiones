@@ -16,8 +16,9 @@ font-family: 'Rubik', sans-serif;
   display: flex;
   flex-direction: column; }
   .main-index img {
+    max-width: 500%;
     display: flex;
-    background-position-x: -100px;
+    background-position-x: 30%;
     z-index: 1;
     -webkit-animation: kenburns-right 5s ease-out both;
     animation: kenburns-right 5s ease-out both; }
